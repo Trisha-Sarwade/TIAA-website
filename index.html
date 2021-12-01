@@ -1,54 +1,92 @@
 <!--lK#F@4XxV$5gwXzPJ8da        TIAA14contact-->
 <html>
+  <head>
+    <link rel="stylesheet" href="style_contact.css" />
+  </head>
 
-<head>
-    <link rel="stylesheet" href="style_contact.css">
-</head>
-
-<body>
+  <body>
     <div id="content" class="site-content">
-        <div class="ast-container">
-            <div id="primary" class="content-area primary">
-                <main id="main" class="site-main">
-                    <div class="entry-content clear">
-                        <header class="entry-header">
-                            <h1 class="entry-title">CONTACT</h1>
-                        </header>
+      <div class="ast-container">
+        <div id="primary" class="content-area primary">
+          <main id="main" class="site-main">
+            <div class="entry-content clear">
+              <header class="entry-header">
+                <h1 class="entry-title">CONTACT</h1>
+              </header>
 
-                        <form class="form init" action="https://formsubmit.co/orionph06@gmail.com" method="post">
-                            <div class="centre">
-
-                                <p><label>Tu nombre<br></label>
-                                    <input class="inputs" type="text" name="name" value="" placeholder="Name...">
-                                </p>
-                                <p>
-                                    <label>Tu correo electrónico<br></label>
-                                    <input class="inputs" type="email" name="email" value="" placeholder="E-mail...">
-
-                                </p>
-                                <p>
-                                    <label>Asunto<br></label>
-                                    <input class="inputs" type="text" name="subject" value="" placeholder="Subject...">
-                                </p>
-                                <p>
-                                    <label>Tu mensaje (opcional)<br></label>
-                                    <textarea class="textarea" name="message" cols="40" rows="10" placeholder="Message..."></textarea>
-                                </p>
-                            </div>
-                            <div class="button">
-                                <p>
-                                    <input class="submit" type="submit" value="Enviar">
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-                </main>
+              <form
+                class="form init"
+                action="https://formsubmit.co/orionph06@gmail.com"
+                method="post"
+              >
+                <div class="centre">
+                  <p>
+                    <label>Tu nombre<br /></label>
+                    <input
+                      class="inputs"
+                      type="text"
+                      name="name"
+                      value=""
+                      placeholder="Name..."
+                    />
+                  </p>
+                  <p>
+                    <label>Tu correo electrónico<br /></label>
+                    <input
+                      class="inputs"
+                      type="email"
+                      name="email"
+                      value=""
+                      placeholder="E-mail..."
+                    />
+                  </p>
+                  <p>
+                    <label>Asunto<br /></label>
+                    <input
+                      class="inputs"
+                      type="text"
+                      name="subject"
+                      value=""
+                      placeholder="Subject..."
+                    />
+                  </p>
+                  <p>
+                    <label>Tu mensaje (opcional)<br /></label>
+                    <textarea
+                      class="textarea"
+                      name="message"
+                      cols="40"
+                      rows="10"
+                      placeholder="Message..."
+                    ></textarea>
+                  </p>
+                </div>
+                <div class="button">
+                  <p>
+                    <input class="submit" type="submit" value="Enviar" />
+                  </p>
+                </div>
+              </form>
             </div>
+          </main>
         </div>
-
-
+      </div>
     </div>
 
-</body>
-
+    <!-- Preloader -->
+    <div id="preloaderWrapper">
+      <div class="container-fluid preloader" id="preloader">
+        <img class="tiaa" src="./img/tiaa.png" alt="logo" />
+        <h2>Please Wait...</h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      const preloaderWrapperElement =
+        document.getElementById("preloaderWrapper");
+      window.addEventListener("load", () => {
+        preloaderWrapperElement.style.display = "none";
+      });
+    </script>
+  </body>
 </html>
